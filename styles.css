@@ -49,15 +49,6 @@ footer {
     text-align: center;
 }
 
-.branding {
-    float: left;
-}
-
-.nav {
-    margin: 20px;
-    text-align: right;
-}
-
 .nav a {
     margin-left: 10px;
     text-decoration: none;
@@ -67,15 +58,67 @@ footer {
     text-decoration: underline;
 }
 
-.banner {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    text-align: center;
+@media only screen and (max-width: 800px){
+    .content {
+        margin: auto;
+        width: 100%;
+        white-space: pre-wrap;
+        line-height: 1.5rem;
+    }
+
+    .banner {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .nav-mobile {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .nav-mobile-bottom {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+    
+    .nav-desktop-right {
+        display: none;
+    }
 }
 
-.content {
-    margin: auto;
-    width: 800px;
-    white-space: pre-wrap;
-    line-height: 1.5rem;
+@media only screen and (min-width: 800px){
+    .content {
+        margin: auto;
+        width: 800px;
+        white-space: pre-wrap;
+        line-height: 1.5rem;
+    }
+
+    .banner {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-mobile-bottom {
+        display: none;
+    }
+
+    .nav-desktop {
+        margin: 20px;
+        text-align: left;
+    }
+    
+    .nav-desktop-right {
+        float: right;
+    }
 }
