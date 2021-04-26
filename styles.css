@@ -6,6 +6,7 @@
 }
 
 :root {
+    color-scheme: dark;
     --font: 'IBM VGA 8x16';
     --text-primary: #ffffff;
     --text-secondary: #999999;
