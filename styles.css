@@ -48,20 +48,20 @@ footer a:hover {
     text-decoration: underline;
 }
 
-code {
+.embed {
     background: var(--primary);
-    padding: 20px;
+    padding: 16px;
     border-radius: 2px;
     border-left: 4px solid var(--accent);
-    white-space: pre-wrap;
-    font-family: var(--font);
-    display: inline-block;
-    overflow-x: auto;
+    overflow: auto;
+}
+
+.embed-code {
     font-family: var(--font);
     color: var(--text-secondary);
 }
 
-code:hover {
+.embed-code:hover {
     color: var(--text-primary);
 }
 
