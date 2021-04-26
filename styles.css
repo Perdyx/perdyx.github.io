@@ -70,7 +70,6 @@ code:hover {
 
 .content {
     margin: auto;
-    padding: 15px;
     font-family: var(--font);
     tab-size: 4;
     white-space: pre-wrap;
@@ -87,7 +86,7 @@ code:hover {
 }
 
 .nav-desktop {
-    margin: 15px;
+    margin: 25px;
     text-align: left;
 }
 
@@ -96,7 +95,7 @@ code:hover {
 }
 
 .nav-mobile {
-    margin: 15px;
+    margin: 25px;
     text-align: center;
 }
 
