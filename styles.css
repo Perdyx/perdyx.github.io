@@ -14,6 +14,10 @@
     --accent: #cc00ff;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
     background-color: var(--background);
     color: var(--text-primary);
@@ -49,76 +53,69 @@ footer {
     text-align: center;
 }
 
-.nav a {
-    margin-left: 10px;
+.content {
+    margin: auto;
+    white-space: pre-wrap;
+    line-height: 1.5rem;
+}
+
+.banner {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nav-desktop {
+    margin: 20px;
+    text-align: left;
+}
+
+.nav-desktop-right {
+    float: right;
+}
+
+.nav-mobile {
+    margin: 20px;
+    text-align: center;
+}
+
+.nav-mobile-bottom {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.nav-desktop a, .nav-desktop-right a, .nav-mobile a, .nav-mobile-bottom a {
+    margin-left: 20px;
     text-decoration: none;
 }
 
-.nav a:hover {
+.nav-desktop a:hover, .nav-desktop-right a:hover, .nav-mobile a:hover, .nav-mobile-bottom a:hover {
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1007px){
     .content {
-        margin: auto;
         width: 100%;
-        white-space: pre-wrap;
-        line-height: 1.5rem;
     }
 
     .banner {
         margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
     }
 
-    .nav-mobile {
-        margin: 20px;
-        text-align: center;
-    }
-
-    .nav-mobile-bottom {
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    .nav-desktop {
-        display: none;
-    }
-    
-    .nav-desktop-right {
+    .nav-desktop, .nav-desktop-right {
         display: none;
     }
 }
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 1008px){
     .content {
-        margin: auto;
         width: 800px;
-        white-space: pre-wrap;
-        line-height: 1.5rem;
     }
 
     .banner {
         margin-top: 100px;
-        margin-bottom: 50px;
-        text-align: center;
     }
 
-    .nav-mobile {
+    .nav-mobile, .nav-mobile-bottom {
         display: none;
-    }
-
-    .nav-mobile-bottom {
-        display: none;
-    }
-
-    .nav-desktop {
-        margin: 20px;
-        text-align: left;
-    }
-    
-    .nav-desktop-right {
-        float: right;
     }
 }
