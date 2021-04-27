@@ -39,15 +39,6 @@ footer {
     text-align: center;
 }
 
-footer a {
-    text-decoration: none;
-    color: var(--text-primary);
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
 .embed {
     background: var(--primary);
     padding: 16px;
@@ -87,10 +78,6 @@ footer a:hover {
     tab-size: 4;
     white-space: pre-wrap;
     line-height: 1.4;
-}
-
-.footer-flair {
-    margin: 50px;
 }
 
 .banner {
