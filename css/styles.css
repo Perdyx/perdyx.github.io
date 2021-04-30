@@ -39,22 +39,26 @@ footer {
     text-align: center;
 }
 
-.embed {
+pre {
+    font-family: var(--font);
+    tab-size: 4;
+    white-space: pre-wrap;
+    line-height: 1.4;
+}
+
+code {
     background: var(--primary);
     padding: 16px;
     border-radius: 2px;
     border-left: 4px solid var(--accent);
     overflow: auto;
-}
-
-.embed-code {
     display: inline-block;
-    width: 100%;
+    width: calc(100% - 36px);
     font-family: var(--font);
     color: var(--text-secondary);
 }
 
-.embed-code:hover {
+code:hover {
     color: var(--accent);
 }
 
@@ -74,10 +78,6 @@ footer {
 
 .content {
     margin: auto;
-    font-family: var(--font);
-    tab-size: 4;
-    white-space: pre-wrap;
-    line-height: 1.4;
 }
 
 .banner {
@@ -85,12 +85,12 @@ footer {
     text-align: center;
 }
 
-.nav-desktop {
+.nav {
     margin: 25px;
     text-align: left;
 }
 
-.nav-desktop-right {
+.nav-right {
     float: right;
 }
 
@@ -104,13 +104,13 @@ footer {
     text-align: center;
 }
 
-.nav-desktop a, .nav-desktop-right a, .nav-mobile a, .nav-mobile-bottom a {
+.nav a, .nav-right a, .nav-mobile a, .nav-mobile-bottom a {
     margin-left: 20px;
     text-decoration: none;
     color: var(--text-primary);
 }
 
-.nav-desktop a:hover, .nav-desktop-right a:hover, .nav-mobile a:hover, .nav-mobile-bottom a:hover {
+.nav a:hover, .nav-right a:hover, .nav-mobile a:hover, .nav-mobile-bottom a:hover {
     text-decoration: underline;
     color: var(--text-secondary);
 }
@@ -120,7 +120,7 @@ footer {
         width: 100%;
     }
 
-    .nav-desktop, .nav-desktop-right {
+    .nav, .nav-right {
         display: none;
     }
 }
