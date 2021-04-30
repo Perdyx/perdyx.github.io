@@ -8,7 +8,7 @@
 :root {
     color-scheme: dark;
     --font: 'IBM VGA 8x16';
-    --text-primary: #ffffff;
+    --text-primary: #dddddd;
     --text-secondary: #999999;
     --background: #000000;
     --primary: #222222;
@@ -85,8 +85,8 @@ code:hover {
     text-align: center;
 }
 
-.nav {
-    margin: 25px;
+.nav, .nav-back {
+    margin: 15px;
     text-align: left;
 }
 
@@ -95,7 +95,7 @@ code:hover {
 }
 
 .nav-mobile {
-    margin: 25px;
+    margin: 15px;
     text-align: center;
 }
 
@@ -104,13 +104,16 @@ code:hover {
     text-align: center;
 }
 
-.nav a, .nav-right a, .nav-mobile a, .nav-mobile-bottom a {
-    margin-left: 20px;
+.nav a, .nav-back a, .nav-right a, .nav-mobile a, .nav-mobile-bottom a {
     text-decoration: none;
     color: var(--text-primary);
 }
 
-.nav a:hover, .nav-right a:hover, .nav-mobile a:hover, .nav-mobile-bottom a:hover {
+.nav a, .nav-right a, .nav-mobile a, .nav-mobile-bottom a {
+    margin-left: 25px;
+}
+
+.nav a:hover, .nav-back a:hover, .nav-right a:hover, .nav-mobile a:hover, .nav-mobile-bottom a:hover {
     text-decoration: underline;
     color: var(--text-secondary);
 }
